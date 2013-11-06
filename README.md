@@ -2,6 +2,8 @@
 
 Easy way to get a SHA1 hash
 
+yes I'm this lazy.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -17,8 +19,11 @@ Or install it yourself as:
     $ gem install rickshaw
 
 ## Usage
+    > Rickshaw::SHA1.hash('LICENSE.txt')
+     => "4659d94e7082a65ca39e7b6725094f08a413250a" 
 
-Rickshaw.hash('./file')
+    > "hello world".to_sha1
+     => "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed" 
 
 ## Contributing
 
