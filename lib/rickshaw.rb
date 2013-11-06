@@ -1,5 +1,6 @@
-require "rickshaw/version"
 require 'digest/sha1'
+require 'rickshaw/version'
+require 'core_ext/string/to_sha1'
 
 module Rickshaw
   module SHA1
@@ -10,8 +11,8 @@ module Rickshaw
           buffer = io.read(1024)
           hash.update(buffer)
         end
-      hash.hexdigest
       end
+      hash.hexdigest
     end
   end
 end

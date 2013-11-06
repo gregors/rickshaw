@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-Rickshaw.hash('./file')
+    Rickshaw.hash('./file')
+
+    > "hello world".to_sha1
+     => "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed" 
 
 ## Contributing
 
