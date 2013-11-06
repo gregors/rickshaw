@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["gregory.ostermayr@gmail.com"]
   spec.description   = %q{Get SHA1 hashes easily}
   spec.summary       = %q{Get SHA1 hashes easily}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/gregors/rickshaw"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
