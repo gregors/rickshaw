@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rickshaw::VERSION
   spec.authors       = ["Gregory Ostermayr"]
   spec.email         = ["gregory.ostermayr@gmail.com"]
-  spec.description   = %q{Get SHA1 hashes easily}
-  spec.summary       = %q{Get SHA1 hashes easily}
+  spec.description   = %q{Get SHA1 and other hashes easily}
+  spec.summary       = %q{Get SHA1 and other hashes easily}
   spec.homepage      = "https://github.com/gregors/rickshaw"
   spec.license       = "MIT"
 
