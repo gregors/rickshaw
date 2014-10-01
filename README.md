@@ -25,6 +25,12 @@ Or install it yourself as:
     > "hello world".to_sha1
      => "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed" 
 
+    > Rickshaw::SHA256.hash("LICENSE.txt")
+     => "34c15a6c0d68a79f320f7c0d11ab50f2cb9b0cb9f8bd791ce06340f7448df289"
+
+    > "hello world".to_sha256
+     => "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+
 ## Contributing
 
 1. Fork it
