@@ -34,6 +34,14 @@ Or install it yourself as:
     > "hello world".to_md5
      => "5eb63bbbe01eeed093cb22bb8f5acdc3"
 
+    We can also pack/unpack our hashes to/from binary strings
+
+    > "hello world".to_sha1.packed_bytes
+      => "*\xAEl5\xC9O\xCF\xB4\x15\xDB\xE9_@\x8B\x9C\xE9\x1E\xE8F\xED"
+
+    > "*\xAEl5\xC9O\xCF\xB4\x15\xDB\xE9_@\x8B\x9C\xE9\x1E\xE8F\xED".unpacked_bytes
+      => "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed"
+
 ## Contributing
 
 1. Fork it
