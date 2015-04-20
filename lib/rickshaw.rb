@@ -5,6 +5,7 @@ require 'rickshaw/version'
 require 'core_ext/string/to_md5'
 require 'core_ext/string/to_sha1'
 require 'core_ext/string/to_sha256'
+require 'core_ext/string/byte_packing'
 
 module Rickshaw
   module MD5
