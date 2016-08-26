@@ -42,6 +42,14 @@ Or install it yourself as:
     > "*\xAEl5\xC9O\xCF\xB4\x15\xDB\xE9_@\x8B\x9C\xE9\x1E\xE8F\xED".unpacked_bytes
       => "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed"
 
+    We can also pack/unpack to base64
+
+    > "hello world".to_base64
+      => "aGVsbG8gd29ybGQ="
+
+    > "aGVsbG8gd29ybGQ=".unpack_base64
+      => "hello world"
+
 ## Contributing
 
 1. Fork it
