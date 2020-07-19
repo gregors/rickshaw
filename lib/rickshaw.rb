@@ -13,51 +13,40 @@ module Rickshaw
   module MD5
     def self.hash(file_path)
       hash = Digest::MD5.new
-      open(file_path, 'r') do |io|
-        until io.eof?
-          buffer = io.read(1024)
-          hash.update(buffer)
-        end
-      end
-      hash.hexdigest
+      Rickshaw::Helper.hash_file(hash, file_path)
     end
   end
 
   module SHA1
     def self.hash(file_path)
       hash = Digest::SHA1.new
-      open(file_path, 'r') do |io|
-        until io.eof?
-          buffer = io.read(1024)
-          hash.update(buffer)
-        end
-      end
-      hash.hexdigest
+      Rickshaw::Helper.hash_file(hash, file_path)
     end
   end
 
   module SHA256
     def self.hash(file_path)
       hash = Digest::SHA256.new
-      open(file_path, 'r') do |io|
-        until io.eof?
-          buffer = io.read(1024)
-          hash.update(buffer)
-        end
-      end
-      hash.hexdigest
+      Rickshaw::Helper.hash_file(hash, file_path)
     end
   end
 
   module SHA512
     def self.hash(file_path)
       hash = Digest::SHA512.new
+      Rickshaw::Helper.hash_file(hash, file_path)
+    end
+  end
+
+  module Helper
+    def self.hash_file(hash, file_path)
       open(file_path, 'r') do |io|
         until io.eof?
           buffer = io.read(1024)
           hash.update(buffer)
         end
       end
+
       hash.hexdigest
     end
   end
